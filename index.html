@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FinanceCulc</title>
+    <link rel="stylesheet" href="./main.css" />
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <h1>Finance Culculator</h1>
+      <div class="inputs-block">
+        <div class="input-block-column">
+          <h6>Month income</h6>
+          <div class="input-wrapper">
+            <input
+              type="number"
+              placeholder="Salary"
+              id="income-salary"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Freelance"
+              id="income-freelance"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Extra-income"
+              id="income-extra1"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Extra-income"
+              id="income-extra2"
+              class="input"
+            />
+          </div>
+        </div>
+        <div class="input-block-column">
+          <h6>Обязательные расходы</h6>
+          <div class="input-wrapper">
+            <input
+              type="number"
+              placeholder="Flat rent"
+              id="cost-flat"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="House Serveces"
+              id="cost-house-serveces"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Transportation"
+              id="transportation"
+              class="input"
+            />
+            <input
+              type="number"
+              placeholder="Credits"
+              id="credits"
+              class="input"
+            />
+          </div>
+        </div>
+        <div class="input-block-column">
+          <div class="total-numb">
+            <h6>Доступно в месяц (без копилки)</h6>
+            <input type="number" class="total" id="total-month" value="0" readonly>
+          </div>
+          <div class="total-numb">
+            <h6>Доступно в день</h6>
+            <input type="number" class="total" id="total-day" value="0" readonly>
+          </div>
+          <div class="total-numb">
+            <h6>Накомип за год</h6>
+            <input type="number" class="total" id="total-yaesr" value="0" readonly>
+          </div>
+        </div>
+      </div>
+      <div class="range-block"></div>
+      <div class="result-block">
+        <div class="total-numb">
+          <h6>Копим:</h6>
+          <input type="number" value="0" id="accumulation" readonly />
+        </div>
+        <div class="total-numb">
+          <h6>Тратим:</h6>
+          <input type="number" value="0" id="accumulation" readonly />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
